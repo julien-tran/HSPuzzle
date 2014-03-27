@@ -19,7 +19,36 @@
 		F9AAF12518E2D0AB00DBD9FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF12318E2D0AB00DBD9FF /* InfoPlist.strings */; };
 		F9AAF12718E2D0AB00DBD9FF /* HSPuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF12618E2D0AB00DBD9FF /* HSPuzzleTests.m */; };
 		F9AAF13A18E2D28000DBD9FF /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF13418E2D28000DBD9FF /* HSAppDelegate.m */; };
-		F9AAF13B18E2D28000DBD9FF /* HSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF13818E2D28000DBD9FF /* HSViewController.m */; };
+		F9AAF16818E385E300DBD9FF /* bg_arena_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14118E385E300DBD9FF /* bg_arena_03.jpg */; };
+		F9AAF16918E385E300DBD9FF /* hero_avatar_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14418E385E300DBD9FF /* hero_avatar_druid.png */; };
+		F9AAF16A18E385E300DBD9FF /* hero_avatar_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14518E385E300DBD9FF /* hero_avatar_hunter.png */; };
+		F9AAF16B18E385E300DBD9FF /* hero_avatar_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14618E385E300DBD9FF /* hero_avatar_mage.png */; };
+		F9AAF16C18E385E300DBD9FF /* hero_avatar_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14718E385E300DBD9FF /* hero_avatar_priest.png */; };
+		F9AAF16D18E385E300DBD9FF /* hero_power_druid.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14918E385E300DBD9FF /* hero_power_druid.png */; };
+		F9AAF16E18E385E300DBD9FF /* hero_power_hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14A18E385E300DBD9FF /* hero_power_hunter.png */; };
+		F9AAF16F18E385E300DBD9FF /* hero_power_mage.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14B18E385E300DBD9FF /* hero_power_mage.png */; };
+		F9AAF17018E385E300DBD9FF /* hero_power_priest.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF14C18E385E300DBD9FF /* hero_power_priest.png */; };
+		F9AAF17118E385E300DBD9FF /* AcidicSwampOoze.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15118E385E300DBD9FF /* AcidicSwampOoze.png */; };
+		F9AAF17218E385E300DBD9FF /* AmaniBerserker.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15218E385E300DBD9FF /* AmaniBerserker.png */; };
+		F9AAF17318E385E300DBD9FF /* DarkIronDwarf.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15518E385E300DBD9FF /* DarkIronDwarf.png */; };
+		F9AAF17418E385E300DBD9FF /* MogushanWarden.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15618E385E300DBD9FF /* MogushanWarden.png */; };
+		F9AAF17518E385E300DBD9FF /* Abomination.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15818E385E300DBD9FF /* Abomination.png */; };
+		F9AAF17618E385E300DBD9FF /* FacelessManipulator.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15918E385E300DBD9FF /* FacelessManipulator.png */; };
+		F9AAF17718E385E300DBD9FF /* VentureCoMercenary.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15A18E385E300DBD9FF /* VentureCoMercenary.png */; };
+		F9AAF17818E385E300DBD9FF /* ArgentCommander.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15C18E385E300DBD9FF /* ArgentCommander.png */; };
+		F9AAF17918E385E300DBD9FF /* RagnarosTheFirelord.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15E18E385E300DBD9FF /* RagnarosTheFirelord.png */; };
+		F9AAF17A18E385E300DBD9FF /* WarGolem.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF15F18E385E300DBD9FF /* WarGolem.png */; };
+		F9AAF17B18E385E300DBD9FF /* ArcaniteReaper.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16118E385E300DBD9FF /* ArcaniteReaper.png */; };
+		F9AAF17C18E385E300DBD9FF /* EaglehornBow.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16218E385E300DBD9FF /* EaglehornBow.png */; };
+		F9AAF17D18E385E300DBD9FF /* weapon_attack.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16318E385E300DBD9FF /* weapon_attack.png */; };
+		F9AAF17E18E385E300DBD9FF /* weapon_cardframe.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16418E385E300DBD9FF /* weapon_cardframe.png */; };
+		F9AAF17F18E385E300DBD9FF /* weapon_durability.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16518E385E300DBD9FF /* weapon_durability.png */; };
+		F9AAF18018E385E300DBD9FF /* weapon_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16618E385E300DBD9FF /* weapon_frame.png */; };
+		F9AAF18118E385E300DBD9FF /* weapon_none.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF16718E385E300DBD9FF /* weapon_none.png */; };
+		F9AAF19418E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF18F18E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m */; };
+		F9AAF19518E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF19018E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib */; };
+		F9AAF19618E42C6000DBD9FF /* HSPuzzleBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF19218E42C6000DBD9FF /* HSPuzzleBuilderViewController.m */; };
+		F9AAF19A18E42CBD00DBD9FF /* HSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF19918E42CBD00DBD9FF /* HSHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +78,39 @@
 		F9AAF12618E2D0AB00DBD9FF /* HSPuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSPuzzleTests.m; sourceTree = "<group>"; };
 		F9AAF13318E2D28000DBD9FF /* HSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSAppDelegate.h; sourceTree = "<group>"; };
 		F9AAF13418E2D28000DBD9FF /* HSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSAppDelegate.m; sourceTree = "<group>"; };
-		F9AAF13718E2D28000DBD9FF /* HSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSViewController.h; sourceTree = "<group>"; };
-		F9AAF13818E2D28000DBD9FF /* HSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSViewController.m; sourceTree = "<group>"; };
+		F9AAF14118E385E300DBD9FF /* bg_arena_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_arena_03.jpg; sourceTree = "<group>"; };
+		F9AAF14418E385E300DBD9FF /* hero_avatar_druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_druid.png; sourceTree = "<group>"; };
+		F9AAF14518E385E300DBD9FF /* hero_avatar_hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_hunter.png; sourceTree = "<group>"; };
+		F9AAF14618E385E300DBD9FF /* hero_avatar_mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_mage.png; sourceTree = "<group>"; };
+		F9AAF14718E385E300DBD9FF /* hero_avatar_priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_avatar_priest.png; sourceTree = "<group>"; };
+		F9AAF14918E385E300DBD9FF /* hero_power_druid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_power_druid.png; sourceTree = "<group>"; };
+		F9AAF14A18E385E300DBD9FF /* hero_power_hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_power_hunter.png; sourceTree = "<group>"; };
+		F9AAF14B18E385E300DBD9FF /* hero_power_mage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_power_mage.png; sourceTree = "<group>"; };
+		F9AAF14C18E385E300DBD9FF /* hero_power_priest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero_power_priest.png; sourceTree = "<group>"; };
+		F9AAF15118E385E300DBD9FF /* AcidicSwampOoze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AcidicSwampOoze.png; sourceTree = "<group>"; };
+		F9AAF15218E385E300DBD9FF /* AmaniBerserker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmaniBerserker.png; sourceTree = "<group>"; };
+		F9AAF15518E385E300DBD9FF /* DarkIronDwarf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkIronDwarf.png; sourceTree = "<group>"; };
+		F9AAF15618E385E300DBD9FF /* MogushanWarden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MogushanWarden.png; sourceTree = "<group>"; };
+		F9AAF15818E385E300DBD9FF /* Abomination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abomination.png; sourceTree = "<group>"; };
+		F9AAF15918E385E300DBD9FF /* FacelessManipulator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacelessManipulator.png; sourceTree = "<group>"; };
+		F9AAF15A18E385E300DBD9FF /* VentureCoMercenary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VentureCoMercenary.png; sourceTree = "<group>"; };
+		F9AAF15C18E385E300DBD9FF /* ArgentCommander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArgentCommander.png; sourceTree = "<group>"; };
+		F9AAF15E18E385E300DBD9FF /* RagnarosTheFirelord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RagnarosTheFirelord.png; sourceTree = "<group>"; };
+		F9AAF15F18E385E300DBD9FF /* WarGolem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WarGolem.png; sourceTree = "<group>"; };
+		F9AAF16118E385E300DBD9FF /* ArcaniteReaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArcaniteReaper.png; sourceTree = "<group>"; };
+		F9AAF16218E385E300DBD9FF /* EaglehornBow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EaglehornBow.png; sourceTree = "<group>"; };
+		F9AAF16318E385E300DBD9FF /* weapon_attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weapon_attack.png; sourceTree = "<group>"; };
+		F9AAF16418E385E300DBD9FF /* weapon_cardframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weapon_cardframe.png; sourceTree = "<group>"; };
+		F9AAF16518E385E300DBD9FF /* weapon_durability.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weapon_durability.png; sourceTree = "<group>"; };
+		F9AAF16618E385E300DBD9FF /* weapon_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weapon_frame.png; sourceTree = "<group>"; };
+		F9AAF16718E385E300DBD9FF /* weapon_none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weapon_none.png; sourceTree = "<group>"; };
+		F9AAF18E18E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPuzzleBuilderMenuViewController.h; sourceTree = "<group>"; };
+		F9AAF18F18E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPuzzleBuilderMenuViewController.m; sourceTree = "<group>"; };
+		F9AAF19018E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPuzzleBuilderMenuViewController.xib; sourceTree = "<group>"; };
+		F9AAF19118E42C6000DBD9FF /* HSPuzzleBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPuzzleBuilderViewController.h; sourceTree = "<group>"; };
+		F9AAF19218E42C6000DBD9FF /* HSPuzzleBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPuzzleBuilderViewController.m; sourceTree = "<group>"; };
+		F9AAF19818E42CBD00DBD9FF /* HSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeViewController.h; sourceTree = "<group>"; };
+		F9AAF19918E42CBD00DBD9FF /* HSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +244,8 @@
 		F9AAF13618E2D28000DBD9FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F9AAF13718E2D28000DBD9FF /* HSViewController.h */,
-				F9AAF13818E2D28000DBD9FF /* HSViewController.m */,
+				F9AAF19718E42CBD00DBD9FF /* home */,
+				F9AAF18D18E42C6000DBD9FF /* puzzle_builder */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,8 +253,175 @@
 		F9AAF13918E2D28000DBD9FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF13F18E385E300DBD9FF /* images */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9AAF13F18E385E300DBD9FF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14018E385E300DBD9FF /* arena */,
+				F9AAF14218E385E300DBD9FF /* heroes */,
+				F9AAF14D18E385E300DBD9FF /* minions */,
+				F9AAF16018E385E300DBD9FF /* weapons */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F9AAF14018E385E300DBD9FF /* arena */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14118E385E300DBD9FF /* bg_arena_03.jpg */,
+			);
+			path = arena;
+			sourceTree = "<group>";
+		};
+		F9AAF14218E385E300DBD9FF /* heroes */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14318E385E300DBD9FF /* avatar */,
+				F9AAF14818E385E300DBD9FF /* power */,
+			);
+			path = heroes;
+			sourceTree = "<group>";
+		};
+		F9AAF14318E385E300DBD9FF /* avatar */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14418E385E300DBD9FF /* hero_avatar_druid.png */,
+				F9AAF14518E385E300DBD9FF /* hero_avatar_hunter.png */,
+				F9AAF14618E385E300DBD9FF /* hero_avatar_mage.png */,
+				F9AAF14718E385E300DBD9FF /* hero_avatar_priest.png */,
+			);
+			path = avatar;
+			sourceTree = "<group>";
+		};
+		F9AAF14818E385E300DBD9FF /* power */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14918E385E300DBD9FF /* hero_power_druid.png */,
+				F9AAF14A18E385E300DBD9FF /* hero_power_hunter.png */,
+				F9AAF14B18E385E300DBD9FF /* hero_power_mage.png */,
+				F9AAF14C18E385E300DBD9FF /* hero_power_priest.png */,
+			);
+			path = power;
+			sourceTree = "<group>";
+		};
+		F9AAF14D18E385E300DBD9FF /* minions */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14E18E385E300DBD9FF /* neutral */,
+			);
+			path = minions;
+			sourceTree = "<group>";
+		};
+		F9AAF14E18E385E300DBD9FF /* neutral */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF14F18E385E300DBD9FF /* mana-01 */,
+				F9AAF15018E385E300DBD9FF /* mana-02 */,
+				F9AAF15318E385E300DBD9FF /* mana-03 */,
+				F9AAF15418E385E300DBD9FF /* mana-04 */,
+				F9AAF15718E385E300DBD9FF /* mana-05 */,
+				F9AAF15B18E385E300DBD9FF /* mana-06 */,
+				F9AAF15D18E385E300DBD9FF /* mana-07+ */,
+			);
+			path = neutral;
+			sourceTree = "<group>";
+		};
+		F9AAF14F18E385E300DBD9FF /* mana-01 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "mana-01";
+			sourceTree = "<group>";
+		};
+		F9AAF15018E385E300DBD9FF /* mana-02 */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF15118E385E300DBD9FF /* AcidicSwampOoze.png */,
+				F9AAF15218E385E300DBD9FF /* AmaniBerserker.png */,
+			);
+			path = "mana-02";
+			sourceTree = "<group>";
+		};
+		F9AAF15318E385E300DBD9FF /* mana-03 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "mana-03";
+			sourceTree = "<group>";
+		};
+		F9AAF15418E385E300DBD9FF /* mana-04 */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF15518E385E300DBD9FF /* DarkIronDwarf.png */,
+				F9AAF15618E385E300DBD9FF /* MogushanWarden.png */,
+			);
+			path = "mana-04";
+			sourceTree = "<group>";
+		};
+		F9AAF15718E385E300DBD9FF /* mana-05 */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF15818E385E300DBD9FF /* Abomination.png */,
+				F9AAF15918E385E300DBD9FF /* FacelessManipulator.png */,
+				F9AAF15A18E385E300DBD9FF /* VentureCoMercenary.png */,
+			);
+			path = "mana-05";
+			sourceTree = "<group>";
+		};
+		F9AAF15B18E385E300DBD9FF /* mana-06 */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF15C18E385E300DBD9FF /* ArgentCommander.png */,
+			);
+			path = "mana-06";
+			sourceTree = "<group>";
+		};
+		F9AAF15D18E385E300DBD9FF /* mana-07+ */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF15E18E385E300DBD9FF /* RagnarosTheFirelord.png */,
+				F9AAF15F18E385E300DBD9FF /* WarGolem.png */,
+			);
+			path = "mana-07+";
+			sourceTree = "<group>";
+		};
+		F9AAF16018E385E300DBD9FF /* weapons */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF16118E385E300DBD9FF /* ArcaniteReaper.png */,
+				F9AAF16218E385E300DBD9FF /* EaglehornBow.png */,
+				F9AAF16318E385E300DBD9FF /* weapon_attack.png */,
+				F9AAF16418E385E300DBD9FF /* weapon_cardframe.png */,
+				F9AAF16518E385E300DBD9FF /* weapon_durability.png */,
+				F9AAF16618E385E300DBD9FF /* weapon_frame.png */,
+				F9AAF16718E385E300DBD9FF /* weapon_none.png */,
+			);
+			path = weapons;
+			sourceTree = "<group>";
+		};
+		F9AAF18D18E42C6000DBD9FF /* puzzle_builder */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF18E18E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.h */,
+				F9AAF18F18E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m */,
+				F9AAF19018E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib */,
+				F9AAF19118E42C6000DBD9FF /* HSPuzzleBuilderViewController.h */,
+				F9AAF19218E42C6000DBD9FF /* HSPuzzleBuilderViewController.m */,
+			);
+			path = puzzle_builder;
+			sourceTree = "<group>";
+		};
+		F9AAF19718E42CBD00DBD9FF /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF19818E42CBD00DBD9FF /* HSHomeViewController.h */,
+				F9AAF19918E42CBD00DBD9FF /* HSHomeViewController.m */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +501,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AAF16D18E385E300DBD9FF /* hero_power_druid.png in Resources */,
+				F9AAF16B18E385E300DBD9FF /* hero_avatar_mage.png in Resources */,
+				F9AAF17F18E385E300DBD9FF /* weapon_durability.png in Resources */,
+				F9AAF18118E385E300DBD9FF /* weapon_none.png in Resources */,
+				F9AAF16E18E385E300DBD9FF /* hero_power_hunter.png in Resources */,
+				F9AAF17518E385E300DBD9FF /* Abomination.png in Resources */,
+				F9AAF16A18E385E300DBD9FF /* hero_avatar_hunter.png in Resources */,
+				F9AAF17D18E385E300DBD9FF /* weapon_attack.png in Resources */,
+				F9AAF17218E385E300DBD9FF /* AmaniBerserker.png in Resources */,
+				F9AAF17118E385E300DBD9FF /* AcidicSwampOoze.png in Resources */,
+				F9AAF17918E385E300DBD9FF /* RagnarosTheFirelord.png in Resources */,
+				F9AAF16C18E385E300DBD9FF /* hero_avatar_priest.png in Resources */,
+				F9AAF17018E385E300DBD9FF /* hero_power_priest.png in Resources */,
+				F9AAF17318E385E300DBD9FF /* DarkIronDwarf.png in Resources */,
+				F9AAF18018E385E300DBD9FF /* weapon_frame.png in Resources */,
+				F9AAF17E18E385E300DBD9FF /* weapon_cardframe.png in Resources */,
+				F9AAF16818E385E300DBD9FF /* bg_arena_03.jpg in Resources */,
+				F9AAF17618E385E300DBD9FF /* FacelessManipulator.png in Resources */,
+				F9AAF17B18E385E300DBD9FF /* ArcaniteReaper.png in Resources */,
+				F9AAF17718E385E300DBD9FF /* VentureCoMercenary.png in Resources */,
+				F9AAF17A18E385E300DBD9FF /* WarGolem.png in Resources */,
+				F9AAF19518E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib in Resources */,
 				F9AAF11418E2D0AB00DBD9FF /* Images.xcassets in Resources */,
+				F9AAF17418E385E300DBD9FF /* MogushanWarden.png in Resources */,
+				F9AAF16F18E385E300DBD9FF /* hero_power_mage.png in Resources */,
 				F9AAF10F18E2D0AB00DBD9FF /* Main.storyboard in Resources */,
+				F9AAF17C18E385E300DBD9FF /* EaglehornBow.png in Resources */,
+				F9AAF16918E385E300DBD9FF /* hero_avatar_druid.png in Resources */,
+				F9AAF17818E385E300DBD9FF /* ArgentCommander.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +548,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9AAF13B18E2D28000DBD9FF /* HSViewController.m in Sources */,
 				F9AAF10818E2D0AB00DBD9FF /* main.m in Sources */,
+				F9AAF19418E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m in Sources */,
 				F9AAF13A18E2D28000DBD9FF /* HSAppDelegate.m in Sources */,
+				F9AAF19A18E42CBD00DBD9FF /* HSHomeViewController.m in Sources */,
+				F9AAF19618E42C6000DBD9FF /* HSPuzzleBuilderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +751,7 @@
 				F9AAF12C18E2D0AB00DBD9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9AAF12D18E2D0AB00DBD9FF /* Build configuration list for PBXNativeTarget "HSPuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +760,7 @@
 				F9AAF12F18E2D0AB00DBD9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

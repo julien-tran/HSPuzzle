@@ -1,5 +1,5 @@
 //
-//  HSViewController.h
+//  HSPuzzleBuilderViewController.h
 //  HSPuzzle
 //
 //  Created by Julien Tran on 26/03/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSViewController : UIViewController
+@interface HSPuzzleBuilderViewController : UIViewController
 
 @end
