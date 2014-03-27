@@ -40,6 +40,7 @@
 {
     if (self = [super init])
     {
+        [self loadCardList];
     }
     return self;
 }
@@ -184,7 +185,6 @@
                                                             error:nil];
     NSArray *lines = [fileData componentsSeparatedByString:@"\n"];
     
-    self.cardList = [[NSMutableArray alloc] init];
     for (NSString *line in lines)
     {
         NSArray *components = [line componentsSeparatedByString:@"|"];
@@ -237,8 +237,6 @@
                     minion.divineShield = @(YES);
             }
         }
-        
-        [self.cardList addObject:aCard];
     }
 }
 

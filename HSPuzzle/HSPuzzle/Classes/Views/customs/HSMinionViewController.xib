@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSMinionViewController">
+            <connections>
+                <outlet property="divineImage" destination="S72-l5-zAo" id="DSc-ld-J9i"/>
+                <outlet property="frozenImage" destination="6xH-FU-Gka" id="7cD-aC-MW1"/>
+                <outlet property="legendaryImage" destination="9Lw-s5-63c" id="2lx-ee-x06"/>
+                <outlet property="minionImage" destination="hL8-Bp-y80" id="bZN-Oq-lU1"/>
+                <outlet property="silenceImage" destination="BQq-AQ-1F7" id="vOz-Iv-v95"/>
+                <outlet property="stealthImage" destination="mqZ-d5-EzK" id="Wmk-ZJ-0L9"/>
+                <outlet property="tauntImage" destination="OCH-SA-r4v" id="fhk-HY-WS7"/>
+                <outlet property="view" destination="utz-60-NZA" id="ahi-yd-8QH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="utz-60-NZA">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArgentCommander.png" translatesAutoresizingMaskIntoConstraints="NO" id="hL8-Bp-y80" userLabel="minion face">
+                    <rect key="frame" x="31" y="25" width="71" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="bgo-zu-rtU" userLabel="border">
+                    <rect key="frame" x="23" y="19" width="87" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_taunt.png" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-SA-r4v" userLabel="taunt">
+                    <rect key="frame" x="18" y="17" width="98" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_stealthed.png" translatesAutoresizingMaskIntoConstraints="NO" id="mqZ-d5-EzK" userLabel="stealth">
+                    <rect key="frame" x="31" y="17" width="71" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_silenced.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-AQ-1F7" userLabel="silence">
+                    <rect key="frame" x="16" y="17" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_legendary.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Lw-s5-63c" userLabel="legendary">
+                    <rect key="frame" x="30" y="8" width="97" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_frozen.png" translatesAutoresizingMaskIntoConstraints="NO" id="6xH-FU-Gka" userLabel="frozen">
+                    <rect key="frame" x="11" y="7" width="112" height="130"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_divine_shield.png" translatesAutoresizingMaskIntoConstraints="NO" id="S72-l5-zAo" userLabel="divine">
+                    <rect key="frame" x="0.0" y="0.0" width="130" height="154"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArgentCommander.png" width="71" height="96"/>
+        <image name="token_divine_shield.png" width="130" height="154"/>
+        <image name="token_frozen.png" width="112" height="130"/>
+        <image name="token_legendary.png" width="97" height="72"/>
+        <image name="token_normal.png" width="87" height="112"/>
+        <image name="token_silenced.png" width="102" height="113"/>
+        <image name="token_stealthed.png" width="71" height="96"/>
+        <image name="token_taunt.png" width="98" height="128"/>
+    </resources>
+</document>

@@ -25,8 +25,6 @@ typedef enum
 @property (readonly, strong, nonatomic) NSManagedObjectModel            *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator    *persistentStoreCoordinator;
 
-@property (nonatomic, strong) NSMutableArray *cardList;
-
 + (instancetype)sharedInstance;
 + (NSArray*)heroIDList;
 

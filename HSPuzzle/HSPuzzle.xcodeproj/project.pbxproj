@@ -64,6 +64,21 @@
 		F9AAF1DC18E4853200DBD9FF /* card-hunter.data in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1DB18E4853200DBD9FF /* card-hunter.data */; };
 		F9AAF1DF18E48D0000DBD9FF /* HSWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1DE18E48D0000DBD9FF /* HSWeapon.m */; };
 		F9AAF1E218E493A600DBD9FF /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1E118E493A600DBD9FF /* HSCard.m */; };
+		F9AAF1E718E4DBD100DBD9FF /* HSMinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1E518E4DBD100DBD9FF /* HSMinionViewController.m */; };
+		F9AAF1E818E4DBD100DBD9FF /* HSMinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1E618E4DBD100DBD9FF /* HSMinionViewController.xib */; };
+		F9AAF1F118E4DDB700DBD9FF /* token_divine_shield.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1EA18E4DDB700DBD9FF /* token_divine_shield.png */; };
+		F9AAF1F218E4DDB700DBD9FF /* token_frozen.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1EB18E4DDB700DBD9FF /* token_frozen.png */; };
+		F9AAF1F318E4DDB700DBD9FF /* token_legendary.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1EC18E4DDB700DBD9FF /* token_legendary.png */; };
+		F9AAF1F418E4DDB700DBD9FF /* token_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1ED18E4DDB700DBD9FF /* token_normal.png */; };
+		F9AAF1F518E4DDB700DBD9FF /* token_silenced.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1EE18E4DDB700DBD9FF /* token_silenced.png */; };
+		F9AAF1F618E4DDB700DBD9FF /* token_stealthed.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1EF18E4DDB700DBD9FF /* token_stealthed.png */; };
+		F9AAF1F718E4DDB700DBD9FF /* token_taunt.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1F018E4DDB700DBD9FF /* token_taunt.png */; };
+		F9AAF1FB18E4E07600DBD9FF /* HSCardSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1F918E4E07600DBD9FF /* HSCardSelectViewController.m */; };
+		F9AAF1FC18E4E07600DBD9FF /* HSCardSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1FA18E4E07600DBD9FF /* HSCardSelectViewController.xib */; };
+		F9AAF20018E4EDFE00DBD9FF /* HSCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1FE18E4EDFE00DBD9FF /* HSCardViewController.m */; };
+		F9AAF20118E4EDFE00DBD9FF /* HSCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1FF18E4EDFE00DBD9FF /* HSCardViewController.xib */; };
+		F9AAF20518E4EE9B00DBD9FF /* cardframe_minion.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF20318E4EE9B00DBD9FF /* cardframe_minion.png */; };
+		F9AAF20618E4EE9B00DBD9FF /* cardframe_spell.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF20418E4EE9B00DBD9FF /* cardframe_spell.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +165,24 @@
 		F9AAF1DE18E48D0000DBD9FF /* HSWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSWeapon.m; sourceTree = "<group>"; };
 		F9AAF1E018E493A600DBD9FF /* HSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCard.h; sourceTree = "<group>"; };
 		F9AAF1E118E493A600DBD9FF /* HSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCard.m; sourceTree = "<group>"; };
+		F9AAF1E418E4DBD100DBD9FF /* HSMinionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMinionViewController.h; sourceTree = "<group>"; };
+		F9AAF1E518E4DBD100DBD9FF /* HSMinionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMinionViewController.m; sourceTree = "<group>"; };
+		F9AAF1E618E4DBD100DBD9FF /* HSMinionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSMinionViewController.xib; sourceTree = "<group>"; };
+		F9AAF1EA18E4DDB700DBD9FF /* token_divine_shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_divine_shield.png; sourceTree = "<group>"; };
+		F9AAF1EB18E4DDB700DBD9FF /* token_frozen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_frozen.png; sourceTree = "<group>"; };
+		F9AAF1EC18E4DDB700DBD9FF /* token_legendary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_legendary.png; sourceTree = "<group>"; };
+		F9AAF1ED18E4DDB700DBD9FF /* token_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_normal.png; sourceTree = "<group>"; };
+		F9AAF1EE18E4DDB700DBD9FF /* token_silenced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_silenced.png; sourceTree = "<group>"; };
+		F9AAF1EF18E4DDB700DBD9FF /* token_stealthed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_stealthed.png; sourceTree = "<group>"; };
+		F9AAF1F018E4DDB700DBD9FF /* token_taunt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = token_taunt.png; sourceTree = "<group>"; };
+		F9AAF1F818E4E07600DBD9FF /* HSCardSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardSelectViewController.h; sourceTree = "<group>"; };
+		F9AAF1F918E4E07600DBD9FF /* HSCardSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardSelectViewController.m; sourceTree = "<group>"; };
+		F9AAF1FA18E4E07600DBD9FF /* HSCardSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCardSelectViewController.xib; sourceTree = "<group>"; };
+		F9AAF1FD18E4EDFE00DBD9FF /* HSCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCardViewController.h; sourceTree = "<group>"; };
+		F9AAF1FE18E4EDFE00DBD9FF /* HSCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCardViewController.m; sourceTree = "<group>"; };
+		F9AAF1FF18E4EDFE00DBD9FF /* HSCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCardViewController.xib; sourceTree = "<group>"; };
+		F9AAF20318E4EE9B00DBD9FF /* cardframe_minion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_minion.png; sourceTree = "<group>"; };
+		F9AAF20418E4EE9B00DBD9FF /* cardframe_spell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_spell.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +306,7 @@
 		F9AAF13618E2D28000DBD9FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF1E318E4DBB500DBD9FF /* customs */,
 				F9AAF1A418E4528B00DBD9FF /* popovers */,
 				F9AAF19718E42CBD00DBD9FF /* home */,
 				F9AAF18D18E42C6000DBD9FF /* puzzle_builder */,
@@ -292,6 +326,7 @@
 		F9AAF13F18E385E300DBD9FF /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF20218E4EE9B00DBD9FF /* common */,
 				F9AAF14018E385E300DBD9FF /* arena */,
 				F9AAF14218E385E300DBD9FF /* heroes */,
 				F9AAF14D18E385E300DBD9FF /* minions */,
@@ -342,6 +377,7 @@
 		F9AAF14D18E385E300DBD9FF /* minions */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF1E918E4DDB700DBD9FF /* tokens */,
 				F9AAF14E18E385E300DBD9FF /* neutral */,
 			);
 			path = minions;
@@ -494,6 +530,9 @@
 				F9AAF1A518E452B700DBD9FF /* HSHeroEditViewController.h */,
 				F9AAF1A618E452B700DBD9FF /* HSHeroEditViewController.m */,
 				F9AAF1A718E452B700DBD9FF /* HSHeroEditViewController.xib */,
+				F9AAF1F818E4E07600DBD9FF /* HSCardSelectViewController.h */,
+				F9AAF1F918E4E07600DBD9FF /* HSCardSelectViewController.m */,
+				F9AAF1FA18E4E07600DBD9FF /* HSCardSelectViewController.xib */,
 			);
 			path = popovers;
 			sourceTree = "<group>";
@@ -526,6 +565,42 @@
 				F9AAF1DE18E48D0000DBD9FF /* HSWeapon.m */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F9AAF1E318E4DBB500DBD9FF /* customs */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1E418E4DBD100DBD9FF /* HSMinionViewController.h */,
+				F9AAF1E518E4DBD100DBD9FF /* HSMinionViewController.m */,
+				F9AAF1E618E4DBD100DBD9FF /* HSMinionViewController.xib */,
+				F9AAF1FD18E4EDFE00DBD9FF /* HSCardViewController.h */,
+				F9AAF1FE18E4EDFE00DBD9FF /* HSCardViewController.m */,
+				F9AAF1FF18E4EDFE00DBD9FF /* HSCardViewController.xib */,
+			);
+			path = customs;
+			sourceTree = "<group>";
+		};
+		F9AAF1E918E4DDB700DBD9FF /* tokens */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1EA18E4DDB700DBD9FF /* token_divine_shield.png */,
+				F9AAF1EB18E4DDB700DBD9FF /* token_frozen.png */,
+				F9AAF1EC18E4DDB700DBD9FF /* token_legendary.png */,
+				F9AAF1ED18E4DDB700DBD9FF /* token_normal.png */,
+				F9AAF1EE18E4DDB700DBD9FF /* token_silenced.png */,
+				F9AAF1EF18E4DDB700DBD9FF /* token_stealthed.png */,
+				F9AAF1F018E4DDB700DBD9FF /* token_taunt.png */,
+			);
+			path = tokens;
+			sourceTree = "<group>";
+		};
+		F9AAF20218E4EE9B00DBD9FF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF20318E4EE9B00DBD9FF /* cardframe_minion.png */,
+				F9AAF20418E4EE9B00DBD9FF /* cardframe_spell.png */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -605,23 +680,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AAF1F718E4DDB700DBD9FF /* token_taunt.png in Resources */,
 				F9AAF16D18E385E300DBD9FF /* hero_power_druid.png in Resources */,
 				F9AAF1A918E452B700DBD9FF /* HSHeroEditViewController.xib in Resources */,
 				F9AAF16B18E385E300DBD9FF /* hero_avatar_mage.png in Resources */,
+				F9AAF1F218E4DDB700DBD9FF /* token_frozen.png in Resources */,
 				F9AAF17F18E385E300DBD9FF /* weapon_durability.png in Resources */,
+				F9AAF20618E4EE9B00DBD9FF /* cardframe_spell.png in Resources */,
 				F9AAF18118E385E300DBD9FF /* weapon_none.png in Resources */,
 				F9AAF16E18E385E300DBD9FF /* hero_power_hunter.png in Resources */,
 				F9AAF1DA18E484DE00DBD9FF /* card-warrior.data in Resources */,
+				F9AAF1F418E4DDB700DBD9FF /* token_normal.png in Resources */,
 				F9AAF17518E385E300DBD9FF /* Abomination.png in Resources */,
 				F9AAF16A18E385E300DBD9FF /* hero_avatar_hunter.png in Resources */,
+				F9AAF1F118E4DDB700DBD9FF /* token_divine_shield.png in Resources */,
 				F9AAF17D18E385E300DBD9FF /* weapon_attack.png in Resources */,
 				F9AAF17218E385E300DBD9FF /* AmaniBerserker.png in Resources */,
 				F9AAF17118E385E300DBD9FF /* AcidicSwampOoze.png in Resources */,
 				F9AAF17918E385E300DBD9FF /* RagnarosTheFirelord.png in Resources */,
+				F9AAF20518E4EE9B00DBD9FF /* cardframe_minion.png in Resources */,
 				F9AAF16C18E385E300DBD9FF /* hero_avatar_priest.png in Resources */,
+				F9AAF1F318E4DDB700DBD9FF /* token_legendary.png in Resources */,
+				F9AAF1F518E4DDB700DBD9FF /* token_silenced.png in Resources */,
 				F9AAF17018E385E300DBD9FF /* hero_power_priest.png in Resources */,
+				F9AAF1F618E4DDB700DBD9FF /* token_stealthed.png in Resources */,
 				F9AAF17318E385E300DBD9FF /* DarkIronDwarf.png in Resources */,
 				F9AAF18018E385E300DBD9FF /* weapon_frame.png in Resources */,
+				F9AAF20118E4EDFE00DBD9FF /* HSCardViewController.xib in Resources */,
 				F9AAF1D818E4826200DBD9FF /* card-neutral.data in Resources */,
 				F9AAF1DC18E4853200DBD9FF /* card-hunter.data in Resources */,
 				F9AAF17E18E385E300DBD9FF /* weapon_cardframe.png in Resources */,
@@ -629,9 +714,11 @@
 				F9AAF17618E385E300DBD9FF /* FacelessManipulator.png in Resources */,
 				F9AAF17B18E385E300DBD9FF /* ArcaniteReaper.png in Resources */,
 				F9AAF17718E385E300DBD9FF /* VentureCoMercenary.png in Resources */,
+				F9AAF1FC18E4E07600DBD9FF /* HSCardSelectViewController.xib in Resources */,
 				F9AAF17A18E385E300DBD9FF /* WarGolem.png in Resources */,
 				F9AAF19518E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib in Resources */,
 				F9AAF11418E2D0AB00DBD9FF /* Images.xcassets in Resources */,
+				F9AAF1E818E4DBD100DBD9FF /* HSMinionViewController.xib in Resources */,
 				F9AAF17418E385E300DBD9FF /* MogushanWarden.png in Resources */,
 				F9AAF16F18E385E300DBD9FF /* hero_power_mage.png in Resources */,
 				F9AAF10F18E2D0AB00DBD9FF /* Main.storyboard in Resources */,
@@ -659,12 +746,15 @@
 				F9AAF10818E2D0AB00DBD9FF /* main.m in Sources */,
 				F9AAF19418E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m in Sources */,
 				F9AAF13A18E2D28000DBD9FF /* HSAppDelegate.m in Sources */,
+				F9AAF1FB18E4E07600DBD9FF /* HSCardSelectViewController.m in Sources */,
 				F9AAF1C718E463AE00DBD9FF /* HSScene.m in Sources */,
 				F9AAF1A318E4520500DBD9FF /* iCarousel.m in Sources */,
 				F9AAF1B018E4590F00DBD9FF /* HSModel.xcdatamodeld in Sources */,
 				F9AAF1D318E463F200DBD9FF /* HSMinion.m in Sources */,
+				F9AAF1E718E4DBD100DBD9FF /* HSMinionViewController.m in Sources */,
 				F9AAF19A18E42CBD00DBD9FF /* HSHomeViewController.m in Sources */,
 				F9AAF1A818E452B700DBD9FF /* HSHeroEditViewController.m in Sources */,
+				F9AAF20018E4EDFE00DBD9FF /* HSCardViewController.m in Sources */,
 				F9AAF19618E42C6000DBD9FF /* HSPuzzleBuilderViewController.m in Sources */,
 				F9AAF1E218E493A600DBD9FF /* HSCard.m in Sources */,
 				F9AAF1AC18E4576C00DBD9FF /* HSDataCenter.m in Sources */,
