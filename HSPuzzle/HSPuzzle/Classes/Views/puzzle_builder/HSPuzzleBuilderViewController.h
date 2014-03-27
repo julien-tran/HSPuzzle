@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSPuzzleBuilderViewController : UIViewController
+@interface HSPuzzleBuilderViewController : UIViewController <UIPopoverControllerDelegate>
 
 @end

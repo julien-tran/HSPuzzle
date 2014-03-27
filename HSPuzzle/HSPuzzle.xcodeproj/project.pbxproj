@@ -49,6 +49,16 @@
 		F9AAF19518E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF19018E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib */; };
 		F9AAF19618E42C6000DBD9FF /* HSPuzzleBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF19218E42C6000DBD9FF /* HSPuzzleBuilderViewController.m */; };
 		F9AAF19A18E42CBD00DBD9FF /* HSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF19918E42CBD00DBD9FF /* HSHomeViewController.m */; };
+		F9AAF1A318E4520500DBD9FF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1A218E4520500DBD9FF /* iCarousel.m */; };
+		F9AAF1A818E452B700DBD9FF /* HSHeroEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1A618E452B700DBD9FF /* HSHeroEditViewController.m */; };
+		F9AAF1A918E452B700DBD9FF /* HSHeroEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1A718E452B700DBD9FF /* HSHeroEditViewController.xib */; };
+		F9AAF1AC18E4576C00DBD9FF /* HSDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1AB18E4576C00DBD9FF /* HSDataCenter.m */; };
+		F9AAF1B018E4590F00DBD9FF /* HSModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1AE18E4590F00DBD9FF /* HSModel.xcdatamodeld */; };
+		F9AAF1C718E463AE00DBD9FF /* HSScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1C618E463AE00DBD9FF /* HSScene.m */; };
+		F9AAF1CA18E463AE00DBD9FF /* HSHero.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1C918E463AE00DBD9FF /* HSHero.m */; };
+		F9AAF1CD18E463AE00DBD9FF /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1CC18E463AE00DBD9FF /* HSCard.m */; };
+		F9AAF1D018E463F200DBD9FF /* HSSpell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1CF18E463F200DBD9FF /* HSSpell.m */; };
+		F9AAF1D318E463F200DBD9FF /* HSMinion.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1D218E463F200DBD9FF /* HSMinion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +121,24 @@
 		F9AAF19218E42C6000DBD9FF /* HSPuzzleBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPuzzleBuilderViewController.m; sourceTree = "<group>"; };
 		F9AAF19818E42CBD00DBD9FF /* HSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeViewController.h; sourceTree = "<group>"; };
 		F9AAF19918E42CBD00DBD9FF /* HSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeViewController.m; sourceTree = "<group>"; };
+		F9AAF1A118E4520500DBD9FF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		F9AAF1A218E4520500DBD9FF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		F9AAF1A518E452B700DBD9FF /* HSHeroEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHeroEditViewController.h; sourceTree = "<group>"; };
+		F9AAF1A618E452B700DBD9FF /* HSHeroEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHeroEditViewController.m; sourceTree = "<group>"; };
+		F9AAF1A718E452B700DBD9FF /* HSHeroEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSHeroEditViewController.xib; sourceTree = "<group>"; };
+		F9AAF1AA18E4576C00DBD9FF /* HSDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDataCenter.h; sourceTree = "<group>"; };
+		F9AAF1AB18E4576C00DBD9FF /* HSDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDataCenter.m; sourceTree = "<group>"; };
+		F9AAF1AF18E4590F00DBD9FF /* HSModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HSModel.xcdatamodel; sourceTree = "<group>"; };
+		F9AAF1C518E463AE00DBD9FF /* HSScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSScene.h; sourceTree = "<group>"; };
+		F9AAF1C618E463AE00DBD9FF /* HSScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSScene.m; sourceTree = "<group>"; };
+		F9AAF1C818E463AE00DBD9FF /* HSHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHero.h; sourceTree = "<group>"; };
+		F9AAF1C918E463AE00DBD9FF /* HSHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHero.m; sourceTree = "<group>"; };
+		F9AAF1CB18E463AE00DBD9FF /* HSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSCard.h; path = HSPuzzle/Classes/HSCard.h; sourceTree = SOURCE_ROOT; };
+		F9AAF1CC18E463AE00DBD9FF /* HSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSCard.m; path = HSPuzzle/Classes/HSCard.m; sourceTree = SOURCE_ROOT; };
+		F9AAF1CE18E463F200DBD9FF /* HSSpell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSpell.h; sourceTree = "<group>"; };
+		F9AAF1CF18E463F200DBD9FF /* HSSpell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSpell.m; sourceTree = "<group>"; };
+		F9AAF1D118E463F200DBD9FF /* HSMinion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMinion.h; sourceTree = "<group>"; };
+		F9AAF1D218E463F200DBD9FF /* HSMinion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMinion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,40 +238,29 @@
 		F9AAF13018E2D28000DBD9FF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F9AAF13118E2D28000DBD9FF /* Data */,
+				F9AAF1C418E463A200DBD9FF /* Data */,
+				F9AAF19D18E4520500DBD9FF /* Helpers */,
 				F9AAF13218E2D28000DBD9FF /* Engine */,
 				F9AAF13318E2D28000DBD9FF /* HSAppDelegate.h */,
 				F9AAF13418E2D28000DBD9FF /* HSAppDelegate.m */,
-				F9AAF13518E2D28000DBD9FF /* Utilities */,
 				F9AAF13618E2D28000DBD9FF /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		F9AAF13118E2D28000DBD9FF /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		F9AAF13218E2D28000DBD9FF /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF1AA18E4576C00DBD9FF /* HSDataCenter.h */,
+				F9AAF1AB18E4576C00DBD9FF /* HSDataCenter.m */,
 			);
 			path = Engine;
-			sourceTree = "<group>";
-		};
-		F9AAF13518E2D28000DBD9FF /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		F9AAF13618E2D28000DBD9FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF1A418E4528B00DBD9FF /* popovers */,
 				F9AAF19718E42CBD00DBD9FF /* home */,
 				F9AAF18D18E42C6000DBD9FF /* puzzle_builder */,
 			);
@@ -253,6 +270,7 @@
 		F9AAF13918E2D28000DBD9FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF1AD18E4590500DBD9FF /* data */,
 				F9AAF13F18E385E300DBD9FF /* images */,
 			);
 			path = Resources;
@@ -424,6 +442,74 @@
 			path = home;
 			sourceTree = "<group>";
 		};
+		F9AAF19D18E4520500DBD9FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF19E18E4520500DBD9FF /* Categories */,
+				F9AAF19F18E4520500DBD9FF /* UI_Components */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F9AAF19E18E4520500DBD9FF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F9AAF19F18E4520500DBD9FF /* UI_Components */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1A018E4520500DBD9FF /* iCarousel */,
+			);
+			path = UI_Components;
+			sourceTree = "<group>";
+		};
+		F9AAF1A018E4520500DBD9FF /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1A118E4520500DBD9FF /* iCarousel.h */,
+				F9AAF1A218E4520500DBD9FF /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		F9AAF1A418E4528B00DBD9FF /* popovers */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1A518E452B700DBD9FF /* HSHeroEditViewController.h */,
+				F9AAF1A618E452B700DBD9FF /* HSHeroEditViewController.m */,
+				F9AAF1A718E452B700DBD9FF /* HSHeroEditViewController.xib */,
+			);
+			path = popovers;
+			sourceTree = "<group>";
+		};
+		F9AAF1AD18E4590500DBD9FF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1AE18E4590F00DBD9FF /* HSModel.xcdatamodeld */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		F9AAF1C418E463A200DBD9FF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9AAF1CB18E463AE00DBD9FF /* HSCard.h */,
+				F9AAF1CC18E463AE00DBD9FF /* HSCard.m */,
+				F9AAF1C818E463AE00DBD9FF /* HSHero.h */,
+				F9AAF1C918E463AE00DBD9FF /* HSHero.m */,
+				F9AAF1C518E463AE00DBD9FF /* HSScene.h */,
+				F9AAF1C618E463AE00DBD9FF /* HSScene.m */,
+				F9AAF1D118E463F200DBD9FF /* HSMinion.h */,
+				F9AAF1D218E463F200DBD9FF /* HSMinion.m */,
+				F9AAF1CE18E463F200DBD9FF /* HSSpell.h */,
+				F9AAF1CF18E463F200DBD9FF /* HSSpell.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -502,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9AAF16D18E385E300DBD9FF /* hero_power_druid.png in Resources */,
+				F9AAF1A918E452B700DBD9FF /* HSHeroEditViewController.xib in Resources */,
 				F9AAF16B18E385E300DBD9FF /* hero_avatar_mage.png in Resources */,
 				F9AAF17F18E385E300DBD9FF /* weapon_durability.png in Resources */,
 				F9AAF18118E385E300DBD9FF /* weapon_none.png in Resources */,
@@ -551,8 +638,17 @@
 				F9AAF10818E2D0AB00DBD9FF /* main.m in Sources */,
 				F9AAF19418E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.m in Sources */,
 				F9AAF13A18E2D28000DBD9FF /* HSAppDelegate.m in Sources */,
+				F9AAF1C718E463AE00DBD9FF /* HSScene.m in Sources */,
+				F9AAF1A318E4520500DBD9FF /* iCarousel.m in Sources */,
+				F9AAF1B018E4590F00DBD9FF /* HSModel.xcdatamodeld in Sources */,
+				F9AAF1D318E463F200DBD9FF /* HSMinion.m in Sources */,
 				F9AAF19A18E42CBD00DBD9FF /* HSHomeViewController.m in Sources */,
+				F9AAF1A818E452B700DBD9FF /* HSHeroEditViewController.m in Sources */,
 				F9AAF19618E42C6000DBD9FF /* HSPuzzleBuilderViewController.m in Sources */,
+				F9AAF1AC18E4576C00DBD9FF /* HSDataCenter.m in Sources */,
+				F9AAF1CA18E463AE00DBD9FF /* HSHero.m in Sources */,
+				F9AAF1CD18E463AE00DBD9FF /* HSCard.m in Sources */,
+				F9AAF1D018E463F200DBD9FF /* HSSpell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +859,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9AAF1AE18E4590F00DBD9FF /* HSModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9AAF1AF18E4590F00DBD9FF /* HSModel.xcdatamodel */,
+			);
+			currentVersion = F9AAF1AF18E4590F00DBD9FF /* HSModel.xcdatamodel */;
+			path = HSModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F9AAF0F018E2D0AB00DBD9FF /* Project object */;
 }

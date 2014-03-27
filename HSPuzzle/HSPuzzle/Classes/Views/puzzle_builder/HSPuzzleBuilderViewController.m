@@ -11,8 +11,13 @@
 // Views
 #import "HSPuzzleBuilderMenuViewController.h"
 
+// Popovers
+#import "HSHeroEditViewController.h"
+
 @interface HSPuzzleBuilderViewController ()
 @property (nonatomic, weak) IBOutlet UIView *menuViewContainer;
+
+@property (nonatomic, strong) UIPopoverController *currentPopover;
 @end
 
 @implementation HSPuzzleBuilderViewController
@@ -55,6 +60,20 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+#pragma mark - User Actions
+- (IBAction)heroEditButtonDidClick:(UIButton*)heroEditButton
+{
+    HSHeroEditViewController *heroEditVC = [[HSHeroEditViewController alloc] initWithNibName:nil bundle:nil];
+    self.currentPopover = [[UIPopoverController alloc] initWithContentViewController:heroEditVC];
+    [self.currentPopover presentPopoverFromRect:heroEditButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    self.currentPopover.delegate = self;
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController*)popoverController
+{
+    self.currentPopover = nil;
 }
 
 @end
