@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSHeroEditViewController : UIViewController
+@class HSHero;
 
+@interface HSHeroEditViewController : UIViewController
+@property (nonatomic, strong) HSHero *hero;
 @end

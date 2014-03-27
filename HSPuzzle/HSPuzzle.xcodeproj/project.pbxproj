@@ -59,6 +59,7 @@
 		F9AAF1CD18E463AE00DBD9FF /* HSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1CC18E463AE00DBD9FF /* HSCard.m */; };
 		F9AAF1D018E463F200DBD9FF /* HSSpell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1CF18E463F200DBD9FF /* HSSpell.m */; };
 		F9AAF1D318E463F200DBD9FF /* HSMinion.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF1D218E463F200DBD9FF /* HSMinion.m */; };
+		F9AAF1D518E4667F00DBD9FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AAF1D418E4667F00DBD9FF /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		F9AAF1CF18E463F200DBD9FF /* HSSpell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSpell.m; sourceTree = "<group>"; };
 		F9AAF1D118E463F200DBD9FF /* HSMinion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMinion.h; sourceTree = "<group>"; };
 		F9AAF1D218E463F200DBD9FF /* HSMinion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMinion.m; sourceTree = "<group>"; };
+		F9AAF1D418E4667F00DBD9FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AAF1D518E4667F00DBD9FF /* CoreData.framework in Frameworks */,
 				F9AAF0FE18E2D0AB00DBD9FF /* CoreGraphics.framework in Frameworks */,
 				F9AAF10018E2D0AB00DBD9FF /* UIKit.framework in Frameworks */,
 				F9AAF0FC18E2D0AB00DBD9FF /* Foundation.framework in Frameworks */,
@@ -187,6 +190,7 @@
 		F9AAF0FA18E2D0AB00DBD9FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9AAF1D418E4667F00DBD9FF /* CoreData.framework */,
 				F9AAF0FB18E2D0AB00DBD9FF /* Foundation.framework */,
 				F9AAF0FD18E2D0AB00DBD9FF /* CoreGraphics.framework */,
 				F9AAF0FF18E2D0AB00DBD9FF /* UIKit.framework */,

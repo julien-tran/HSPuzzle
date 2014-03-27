@@ -14,10 +14,26 @@
 // Popovers
 #import "HSHeroEditViewController.h"
 
+// Data
+#import "HSDataCenter.h"
+#import "HSScene.h"
+#import "HSHero.h"
+
 @interface HSPuzzleBuilderViewController ()
 @property (nonatomic, weak) IBOutlet UIView *menuViewContainer;
 
+// Hero View
+@property (nonatomic, weak) IBOutlet UIButton       *heroEditButton;
+@property (nonatomic, weak) IBOutlet UIImageView    *heroPowerImageView;
+@property (nonatomic, weak) IBOutlet UIButton       *villainEditButton;
+@property (nonatomic, weak) IBOutlet UIImageView    *villainPowerImageView;
+
 @property (nonatomic, strong) UIPopoverController *currentPopover;
+
+// Data
+@property (nonatomic, strong) HSScene   *scene;
+@property (nonatomic, strong) HSHero    *hero;
+@property (nonatomic, strong) HSHero    *villain;
 @end
 
 @implementation HSPuzzleBuilderViewController
@@ -39,6 +55,14 @@
     [self.menuViewContainer addSubview:menuViewController.view];
     menuViewController.view.frame = self.view.bounds;
     [self addChildViewController:menuViewController];
+    
+    // Init data
+    self.scene = [HSDataCenter sharedInstance].newScene;
+    self.hero = [HSDataCenter sharedInstance].newHero;
+    self.hero.scene = self.scene;
+    self.villain = [HSDataCenter sharedInstance].newHero;
+    self.villain.isVillain = @(YES);
+    self.villain.scene = self.scene;
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,7 +89,14 @@
 #pragma mark - User Actions
 - (IBAction)heroEditButtonDidClick:(UIButton*)heroEditButton
 {
+    // Create the hero edit popover. This could be to edit the hero or the villain
     HSHeroEditViewController *heroEditVC = [[HSHeroEditViewController alloc] initWithNibName:nil bundle:nil];
+    if (heroEditButton == self.heroEditButton)
+        heroEditVC.hero = self.hero;
+    else
+        heroEditVC.hero = self.villain;
+    
+    // Display the popover
     self.currentPopover = [[UIPopoverController alloc] initWithContentViewController:heroEditVC];
     [self.currentPopover presentPopoverFromRect:heroEditButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     self.currentPopover.delegate = self;
@@ -74,6 +105,27 @@
 - (void)popoverControllerDidDismissPopover:(UIPopoverController*)popoverController
 {
     self.currentPopover = nil;
+    if ([popoverController.contentViewController isKindOfClass:[HSHeroEditViewController class]])
+    {
+        HSHeroEditViewController *heroEditVC = (HSHeroEditViewController*)popoverController.contentViewController;
+        [self reloadViewForHero:heroEditVC.hero];
+    }
+}
+
+#pragma mark - Data
+- (void)reloadViewForHero:(HSHero*)hero
+{
+    UIImageView *heroPowerImageView = self.heroPowerImageView;
+    UIButton *heroEditButton = self.heroEditButton;
+    if (hero.isVillain.boolValue)
+    {
+        heroPowerImageView = self.villainPowerImageView;
+        heroEditButton = self.villainEditButton;
+    }
+    
+    [heroEditButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"hero_avatar_%@", hero.heroID]]
+                    forState:UIControlStateNormal];
+    heroPowerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"hero_power_%@", hero.heroID]];
 }
 
 @end

@@ -61,7 +61,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_arena_03.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rZH-fp-jkL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_arena_03.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rZH-fp-jkL" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="684"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -74,6 +74,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldO-c4-JVR" userLabel="edit villain btn">
+                                <rect key="frame" x="406" y="63" width="103" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hero_avatar_druid.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="heroEditButtonDidClick:" destination="TNK-ne-Rgw" eventType="touchUpInside" id="Qfr-Hr-ve5"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLV-9V-hEs" userLabel="edit hero btn">
                                 <rect key="frame" x="406" y="457" width="103" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,8 +94,12 @@
                                     <action selector="heroEditButtonDidClick:" destination="TNK-ne-Rgw" eventType="touchUpInside" id="T2A-dH-3T5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hero_power_druid.png" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-Hs-5bX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hero_power_druid.png" translatesAutoresizingMaskIntoConstraints="NO" id="0t5-Hs-5bX" userLabel="hero power img">
                                 <rect key="frame" x="539" y="496" width="59" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hero_power_druid.png" translatesAutoresizingMaskIntoConstraints="NO" id="INd-fh-vs9" userLabel="villain power img">
+                                <rect key="frame" x="535" y="124" width="59" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -96,7 +110,11 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="heroEditButton" destination="yLV-9V-hEs" id="voL-eD-edR"/>
+                        <outlet property="heroPowerImageView" destination="0t5-Hs-5bX" id="yRq-ZG-V7c"/>
                         <outlet property="menuViewContainer" destination="PKV-GF-mdE" id="IGc-hu-nKx"/>
+                        <outlet property="villainEditButton" destination="ldO-c4-JVR" id="rz8-XL-4AC"/>
+                        <outlet property="villainPowerImageView" destination="INd-fh-vs9" id="679-5h-Gdh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCl-a7-ADg" userLabel="First Responder" sceneMemberID="firstResponder"/>

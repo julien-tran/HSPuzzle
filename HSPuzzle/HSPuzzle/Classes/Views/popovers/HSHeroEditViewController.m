@@ -10,6 +10,7 @@
 
 // Data
 #import "HSDataCenter.h"
+#import "HSHero.h"
 
 // Custom Views
 #import "iCarousel.h"
@@ -103,6 +104,8 @@
     [UIView animateWithDuration:0.2 animations:^(){
         weakSelf.editView.alpha = 1;
     }];
+    
+    self.hero.heroID = self.heroIDList[carousel.currentItemIndex];
 }
 
 /* User tap to a cover page */
