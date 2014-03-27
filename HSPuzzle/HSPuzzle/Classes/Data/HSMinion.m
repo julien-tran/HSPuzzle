@@ -21,6 +21,8 @@
 @dynamic isStealth;
 @dynamic divineShield;
 @dynamic isTaunt;
-@dynamic parentHero;
+@dynamic heroSummoned;
+@dynamic isFrozen;
+@dynamic isLegendary;
 
 @end

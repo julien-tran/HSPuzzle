@@ -15,5 +15,8 @@
 
 @property (nonatomic, retain) NSNumber * manaCost;
 @property (nonatomic, retain) HSHero *hero;
+@property (nonatomic, retain) NSString * cardName;
+@property (nonatomic, retain) NSString * cardClass;
+@property (nonatomic, retain) NSNumber * cardType;
 
 @end

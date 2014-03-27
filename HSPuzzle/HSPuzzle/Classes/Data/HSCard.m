@@ -14,5 +14,8 @@
 
 @dynamic manaCost;
 @dynamic hero;
+@dynamic cardClass;
+@dynamic cardName;
+@dynamic cardType;
 
 @end

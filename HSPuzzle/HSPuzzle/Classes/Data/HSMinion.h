@@ -23,6 +23,8 @@
 @property (nonatomic, retain) NSNumber * isStealth;
 @property (nonatomic, retain) NSNumber * divineShield;
 @property (nonatomic, retain) NSNumber * isTaunt;
-@property (nonatomic, retain) HSHero *parentHero;
+@property (nonatomic, retain) NSNumber * isFrozen;
+@property (nonatomic, retain) NSNumber * isLegendary;
+@property (nonatomic, retain) HSHero *heroSummoned;
 
 @end

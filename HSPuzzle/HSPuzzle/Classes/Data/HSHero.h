@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class HSCard, HSMinion, HSScene;
+@class HSCard, HSMinion, HSScene, HSWeapon;
 
 @interface HSHero : NSManagedObject
 
@@ -23,6 +23,7 @@
 @property (nonatomic, retain) NSOrderedSet *minions;
 @property (nonatomic, retain) HSScene *scene;
 @property (nonatomic, retain) NSOrderedSet *cards;
+@property (nonatomic, retain) HSWeapon * weapon;
 @end
 
 @interface HSHero (CoreDataGeneratedAccessors)

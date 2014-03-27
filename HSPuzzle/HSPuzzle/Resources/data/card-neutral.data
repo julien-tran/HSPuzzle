@@ -1,0 +1,18 @@
+/*** CARD-TYPE | CARD NAME | MANA COST | (ATTACK) | (HEALTH-DURABILITY) | SPECIAL ***/
+/* For card type:
+/* 1 - Minion
+/* 2 - Spell
+/* 3 - Weapon
+/* 4 - Hero
+/* 5 - Secrets
+
+1|AcidicSwampOoze|2|3|2
+1|AmaniBerserker|2|2|3
+1|DarkIronDwarf|4|4|4
+1|MogushanWarden|4|1|7|Taunt
+1|Abomination|5|4|4|Taunt
+1|FacelessManipulator|5|3|3
+1|VentureCoMercenary|5|7|6
+1|ArgentCommander|6|4|2|Divine
+1|RagnarosTheFirelord|8|8|8
+1|WarGolem|7|7|7

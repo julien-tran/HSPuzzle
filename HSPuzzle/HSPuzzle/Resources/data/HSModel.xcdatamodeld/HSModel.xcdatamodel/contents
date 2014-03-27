@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="HSCard" representedClassName="" isAbstract="YES" syncable="YES">
+    <entity name="HSCard" representedClassName="" syncable="YES">
+        <attribute name="cardClass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSHero" inverseName="cards" inverseEntity="HSHero" syncable="YES"/>
     </entity>
@@ -13,8 +16,9 @@
         <attribute name="isVillain" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="manaCurrent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="cards" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="HSCard" inverseName="hero" inverseEntity="HSCard" syncable="YES"/>
-        <relationship name="minions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="HSMinion" inverseName="parentHero" inverseEntity="HSMinion" syncable="YES"/>
+        <relationship name="minions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="HSMinion" inverseName="heroSummoned" inverseEntity="HSMinion" syncable="YES"/>
         <relationship name="scene" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSScene" inverseName="heroes" inverseEntity="HSScene" syncable="YES"/>
+        <relationship name="weapon" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="HSWeapon" inverseName="heroCarried" inverseEntity="HSWeapon" syncable="YES"/>
     </entity>
     <entity name="HSMinion" representedClassName="HSMinion" parentEntity="HSCard" syncable="YES">
         <attribute name="attackCurrent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -24,9 +28,11 @@
         <attribute name="healthCurrent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="healthModified" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="healthOriginal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isFrozen" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLegendary" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isStealth" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isTaunt" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <relationship name="parentHero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSHero" inverseName="minions" inverseEntity="HSHero" syncable="YES"/>
+        <relationship name="heroSummoned" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSHero" inverseName="minions" inverseEntity="HSHero" syncable="YES"/>
     </entity>
     <entity name="HSScene" representedClassName="HSScene" syncable="YES">
         <attribute name="turnNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -39,11 +45,19 @@
         </fetchedProperty>
     </entity>
     <entity name="HSSpell" representedClassName="HSSpell" parentEntity="HSCard" syncable="YES"/>
+    <entity name="HSWeapon" representedClassName="HSWeapon" parentEntity="HSCard" syncable="YES">
+        <attribute name="attackCurrent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="attackOriginal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="durabilityCurrent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="durabilityOriginal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="heroCarried" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSHero" inverseName="weapon" inverseEntity="HSHero" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="HSCard" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="HSHero" positionX="-54" positionY="-9" width="128" height="193"/>
-        <element name="HSMinion" positionX="-36" positionY="9" width="128" height="193"/>
+        <element name="HSCard" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="HSHero" positionX="-54" positionY="-9" width="128" height="208"/>
+        <element name="HSMinion" positionX="-36" positionY="9" width="128" height="223"/>
         <element name="HSSpell" positionX="-18" positionY="27" width="128" height="43"/>
         <element name="HSScene" positionX="0" positionY="81" width="128" height="116"/>
+        <element name="HSWeapon" positionX="9" positionY="135" width="128" height="118"/>
     </elements>
 </model>

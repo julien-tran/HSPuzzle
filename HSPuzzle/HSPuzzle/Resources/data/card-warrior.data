@@ -1,0 +1,9 @@
+/*** CARD-TYPE | CARD NAME | MANA COST | (ATTACK) | (HEALTH-DURABILITY) | SPECIAL ***/
+/* For card type:
+/* 1 - Minion
+/* 2 - Spell
+/* 3 - Weapon
+/* 4 - Hero
+/* 5 - Secrets
+
+3|ArcaniteReaper|5|5|2

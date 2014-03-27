@@ -24,5 +24,6 @@
 @dynamic minions;
 @dynamic scene;
 @dynamic cards;
+@dynamic weapon;
 
 @end

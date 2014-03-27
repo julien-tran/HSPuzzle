@@ -7,10 +7,13 @@
 //
 
 #import "HSDataCenter.h"
+
+// Data
 #import "HSScene.h"
 #import "HSCard.h"
 #import "HSMinion.h"
 #import "HSHero.h"
+#import "HSWeapon.h"
 
 @implementation HSDataCenter
 
@@ -31,6 +34,14 @@
 + (NSArray*)heroIDList
 {
     return @[@"druid", @"hunter", @"mage", @"priest"];
+}
+
+- (instancetype)init
+{
+    if (self = [super init])
+    {
+    }
+    return self;
 }
 
 #pragma mark - Core Data stack
@@ -138,6 +149,97 @@
     HSHero *scene = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSHero class])
                                                   inManagedObjectContext:self.managedObjectContext];
     return scene;
+}
+
+- (HSCard*)newCard
+{
+    HSCard *card = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSCard class])
+                                                 inManagedObjectContext:self.managedObjectContext];
+    return card;
+}
+
+- (HSWeapon*)newWeapon
+{
+    HSWeapon *card = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSWeapon class])
+                                                   inManagedObjectContext:self.managedObjectContext];
+    return card;
+}
+
+- (HSMinion*)newMinion
+{
+    HSMinion *card = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([HSMinion class])
+                                                   inManagedObjectContext:self.managedObjectContext];
+    return card;
+}
+
+#pragma mark - Data loading
+- (void)loadCardList
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"card-neutral" ofType:@"data"];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath])
+        return;
+    
+    NSString *fileData = [[NSString alloc] initWithContentsOfFile:filePath
+                                                         encoding:NSUTF8StringEncoding
+                                                            error:nil];
+    NSArray *lines = [fileData componentsSeparatedByString:@"\n"];
+    
+    self.cardList = [[NSMutableArray alloc] init];
+    for (NSString *line in lines)
+    {
+        NSArray *components = [line componentsSeparatedByString:@"|"];
+        
+        // We need at least 3 components to describe a card: card type, card name, mana cost.
+        // If the line doesn't contain at least 3 components, it's invalid and is ignored
+        if (components.count < 3)
+            continue;
+        
+        int cardType = [components[0] intValue];
+        
+        // A minion-type card needs at least 5 components. Outside the common card attribute,
+        // we need the default attack and health of the minion
+        if (hsCardTypeMinion == cardType && components.count < 5)
+            continue;
+        
+        // Similarly, the weapon-type card needs at least 5 components
+        if (hsCardTypeWeapon == cardType && components.count < 5)
+            continue;
+        
+        HSCard *aCard = nil;
+        if (hsCardTypeWeapon == cardType)
+            aCard = self.newWeapon;
+        else if (hsCardTypeMinion == cardType)
+            aCard = self.newMinion;
+        else
+            aCard = self.newCard;
+        
+        aCard.cardType = @(cardType);
+        aCard.cardName = components[1];
+        aCard.manaCost = @([components[2] intValue]);
+        if (hsCardTypeWeapon == cardType)
+        {
+            ((HSWeapon*)aCard).attackOriginal = @([components[3] intValue]);
+            ((HSWeapon*)aCard).durabilityOriginal = @([components[4] intValue]);
+        }
+        else if (hsCardTypeMinion == cardType)
+        {
+            HSMinion *minion = (HSMinion*)aCard;
+            minion.attackOriginal = @([components[3] intValue]);
+            minion.healthOriginal = @([components[4] intValue]);
+            if (5 < components.count)
+            {
+                NSString *specialText = components[5];
+                if (NSNotFound != [specialText rangeOfString:@"taunt"].location)
+                    minion.isTaunt = @(YES);
+                if (NSNotFound != [specialText rangeOfString:@"stealth"].location)
+                    minion.isStealth = @(YES);
+                if (NSNotFound != [specialText rangeOfString:@"divine"].location)
+                    minion.divineShield = @(YES);
+            }
+        }
+        
+        [self.cardList addObject:aCard];
+    }
 }
 
 @end

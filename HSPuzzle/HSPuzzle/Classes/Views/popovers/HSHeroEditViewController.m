@@ -42,6 +42,9 @@
     self.heroCarousel.type = iCarouselTypeRotary;
     self.heroIDList = [HSDataCenter heroIDList];
     [self.heroCarousel reloadData];
+    
+    int currentIndex = [self.heroIDList indexOfObject:self.hero.heroID];
+    [self.heroCarousel scrollToItemAtIndex:currentIndex animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
