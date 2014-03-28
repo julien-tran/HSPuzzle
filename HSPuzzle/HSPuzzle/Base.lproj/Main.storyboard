@@ -108,6 +108,9 @@
                                 <state key="normal" title="Add Minion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addMinionButtonDidClick:" destination="TNK-ne-Rgw" eventType="touchUpInside" id="IM8-UC-QeM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-Tk-oLf">
                                 <rect key="frame" x="125" y="269" width="84" height="35"/>
@@ -115,6 +118,9 @@
                                 <state key="normal" title="Add Minion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addMinionButtonDidClick:" destination="TNK-ne-Rgw" eventType="touchUpInside" id="VWz-QQ-4A9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N5-VT-KUq">
                                 <rect key="frame" x="292" y="479" width="93" height="83"/>

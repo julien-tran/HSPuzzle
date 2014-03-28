@@ -228,13 +228,15 @@
             minion.healthOriginal = @([components[4] intValue]);
             if (5 < components.count)
             {
-                NSString *specialText = components[5];
+                NSString *specialText = [components[5] lowercaseString];
                 if (NSNotFound != [specialText rangeOfString:@"taunt"].location)
                     minion.isTaunt = @(YES);
                 if (NSNotFound != [specialText rangeOfString:@"stealth"].location)
                     minion.isStealth = @(YES);
                 if (NSNotFound != [specialText rangeOfString:@"divine"].location)
                     minion.divineShield = @(YES);
+                if (NSNotFound != [specialText rangeOfString:@"legendary"].location)
+                    minion.isLegendary = @(YES);
             }
         }
     }

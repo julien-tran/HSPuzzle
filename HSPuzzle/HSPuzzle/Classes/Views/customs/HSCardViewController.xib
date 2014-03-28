@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSCardViewController">
             <connections>
                 <outlet property="cardFrame" destination="GVR-3i-kXA" id="bA4-Lq-oCf"/>
+                <outlet property="legendaryFrame" destination="qYA-5J-hjf" id="LJa-6b-Q6e"/>
                 <outlet property="minionImage" destination="KiU-5Z-kgR" id="qmJ-88-afN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weaponImage" destination="fPc-PJ-gBg" id="T1K-dJ-GAV"/>
@@ -18,6 +19,11 @@
             <rect key="frame" x="0.0" y="0.0" width="147" height="207"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grD-sG-tFa" userLabel="white view">
+                    <rect key="frame" x="12" y="16" width="125" height="158"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArgentCommander.png" translatesAutoresizingMaskIntoConstraints="NO" id="KiU-5Z-kgR" userLabel="minion">
                     <rect key="frame" x="40" y="14" width="71" height="96"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -26,9 +32,13 @@
                     <rect key="frame" x="25" y="17" width="93" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weapon_cardframe.png" translatesAutoresizingMaskIntoConstraints="NO" id="GVR-3i-kXA" userLabel="cardframe">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardframe_minion.png" translatesAutoresizingMaskIntoConstraints="NO" id="GVR-3i-kXA" userLabel="cardframe">
                     <rect key="frame" x="0.0" y="0.0" width="147" height="207"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="token_legendary.png" translatesAutoresizingMaskIntoConstraints="NO" id="qYA-5J-hjf">
+                    <rect key="frame" x="40" y="-4" width="97" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -38,6 +48,7 @@
     <resources>
         <image name="ArgentCommander.png" width="71" height="96"/>
         <image name="EaglehornBow.png" width="93" height="83"/>
-        <image name="weapon_cardframe.png" width="147" height="207"/>
+        <image name="cardframe_minion.png" width="147" height="207"/>
+        <image name="token_legendary.png" width="97" height="72"/>
     </resources>
 </document>

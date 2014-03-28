@@ -13,6 +13,7 @@
 
 // Popovers
 #import "HSHeroEditViewController.h"
+#import "HSCardSelectViewController.h"
 
 // Data
 #import "HSDataCenter.h"
@@ -99,6 +100,17 @@
     // Display the popover
     self.currentPopover = [[UIPopoverController alloc] initWithContentViewController:heroEditVC];
     [self.currentPopover presentPopoverFromRect:heroEditButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    self.currentPopover.delegate = self;
+}
+
+- (IBAction)addMinionButtonDidClick:(UIButton*)addMinionButton
+{
+    // Create the card select popover
+    HSCardSelectViewController *cardSelectVC = [[HSCardSelectViewController alloc] initWithNibName:nil bundle:nil];
+    
+    // Display the popover
+    self.currentPopover = [[UIPopoverController alloc] initWithContentViewController:cardSelectVC];
+    [self.currentPopover presentPopoverFromRect:addMinionButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     self.currentPopover.delegate = self;
 }
 

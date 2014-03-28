@@ -1,4 +1,4 @@
-/*** CARD-TYPE | CARD NAME | MANA COST | (ATTACK) | (HEALTH-DURABILITY) | SPECIAL ***/
+/*** CARD-TYPE / CARD NAME / MANA COST / (ATTACK) / (HEALTH-DURABILITY) / SPECIAL ***/
 /* For card type:
 /* 1 - Minion
 /* 2 - Spell
@@ -14,5 +14,5 @@
 1|FacelessManipulator|5|3|3
 1|VentureCoMercenary|5|7|6
 1|ArgentCommander|6|4|2|Divine
-1|RagnarosTheFirelord|8|8|8
+1|RagnarosTheFirelord|8|8|8|Legendary
 1|WarGolem|7|7|7

@@ -17,6 +17,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView    *minionImage;
 @property (nonatomic, weak) IBOutlet UIImageView    *spellImage;
 @property (nonatomic, weak) IBOutlet UIImageView    *weaponImage;
+@property (nonatomic, weak) IBOutlet UIImageView    *legendaryFrame;
 @end
 
 @implementation HSCardViewController
@@ -34,6 +35,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.view.clipsToBounds = NO;
+    [self updateUI];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,17 +52,23 @@
         HSMinion *minion = (HSMinion*)self.card;
         self.minionImage.image = [UIImage imageNamed:minion.cardName];
         self.weaponImage.image = nil;
+        self.cardFrame.image = [UIImage imageNamed:@"cardframe_minion.png"];
+        self.legendaryFrame.hidden = !minion.isLegendary;
     }
     else if ([self.card isKindOfClass:[HSWeapon class]])
     {
         HSWeapon *weapon = (HSWeapon*)self.card;
         self.weaponImage.image = [UIImage imageNamed:weapon.cardName];
         self.minionImage.image = nil;
+        self.cardFrame.image = [UIImage imageNamed:@"weapon_cardframe.png"];
+        self.legendaryFrame.hidden = YES;
     }
     else
     {
         self.minionImage.image = nil;
         self.weaponImage.image = nil;
+        self.cardFrame.image = nil;
+        self.legendaryFrame.hidden = YES;
     }
 }
 
