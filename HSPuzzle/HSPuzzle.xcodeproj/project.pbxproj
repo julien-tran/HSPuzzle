@@ -79,6 +79,8 @@
 		F9AAF20118E4EDFE00DBD9FF /* HSCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF1FF18E4EDFE00DBD9FF /* HSCardViewController.xib */; };
 		F9AAF20518E4EE9B00DBD9FF /* cardframe_minion.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF20318E4EE9B00DBD9FF /* cardframe_minion.png */; };
 		F9AAF20618E4EE9B00DBD9FF /* cardframe_spell.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF20418E4EE9B00DBD9FF /* cardframe_spell.png */; };
+		F9AAF20D18E5AF3A00DBD9FF /* HSMinionBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AAF20B18E5AF3A00DBD9FF /* HSMinionBoardViewController.m */; };
+		F9AAF20E18E5AF3B00DBD9FF /* HSMinionBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AAF20C18E5AF3A00DBD9FF /* HSMinionBoardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +185,9 @@
 		F9AAF1FF18E4EDFE00DBD9FF /* HSCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCardViewController.xib; sourceTree = "<group>"; };
 		F9AAF20318E4EE9B00DBD9FF /* cardframe_minion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_minion.png; sourceTree = "<group>"; };
 		F9AAF20418E4EE9B00DBD9FF /* cardframe_spell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardframe_spell.png; sourceTree = "<group>"; };
+		F9AAF20A18E5AF3A00DBD9FF /* HSMinionBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMinionBoardViewController.h; sourceTree = "<group>"; };
+		F9AAF20B18E5AF3A00DBD9FF /* HSMinionBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMinionBoardViewController.m; sourceTree = "<group>"; };
+		F9AAF20C18E5AF3A00DBD9FF /* HSMinionBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSMinionBoardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,6 +483,9 @@
 				F9AAF19018E42C6000DBD9FF /* HSPuzzleBuilderMenuViewController.xib */,
 				F9AAF19118E42C6000DBD9FF /* HSPuzzleBuilderViewController.h */,
 				F9AAF19218E42C6000DBD9FF /* HSPuzzleBuilderViewController.m */,
+				F9AAF20A18E5AF3A00DBD9FF /* HSMinionBoardViewController.h */,
+				F9AAF20B18E5AF3A00DBD9FF /* HSMinionBoardViewController.m */,
+				F9AAF20C18E5AF3A00DBD9FF /* HSMinionBoardViewController.xib */,
 			);
 			path = puzzle_builder;
 			sourceTree = "<group>";
@@ -686,6 +694,7 @@
 				F9AAF16B18E385E300DBD9FF /* hero_avatar_mage.png in Resources */,
 				F9AAF1F218E4DDB700DBD9FF /* token_frozen.png in Resources */,
 				F9AAF17F18E385E300DBD9FF /* weapon_durability.png in Resources */,
+				F9AAF20E18E5AF3B00DBD9FF /* HSMinionBoardViewController.xib in Resources */,
 				F9AAF20618E4EE9B00DBD9FF /* cardframe_spell.png in Resources */,
 				F9AAF18118E385E300DBD9FF /* weapon_none.png in Resources */,
 				F9AAF16E18E385E300DBD9FF /* hero_power_hunter.png in Resources */,
@@ -752,6 +761,7 @@
 				F9AAF1B018E4590F00DBD9FF /* HSModel.xcdatamodeld in Sources */,
 				F9AAF1D318E463F200DBD9FF /* HSMinion.m in Sources */,
 				F9AAF1E718E4DBD100DBD9FF /* HSMinionViewController.m in Sources */,
+				F9AAF20D18E5AF3A00DBD9FF /* HSMinionBoardViewController.m in Sources */,
 				F9AAF19A18E42CBD00DBD9FF /* HSHomeViewController.m in Sources */,
 				F9AAF1A818E452B700DBD9FF /* HSHeroEditViewController.m in Sources */,
 				F9AAF20018E4EDFE00DBD9FF /* HSCardViewController.m in Sources */,

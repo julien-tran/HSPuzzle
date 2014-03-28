@@ -10,6 +10,7 @@
 
 // Views
 #import "HSPuzzleBuilderMenuViewController.h"
+#import "HSMinionBoardViewController.h"
 
 // Popovers
 #import "HSHeroEditViewController.h"
@@ -28,6 +29,10 @@
 @property (nonatomic, weak) IBOutlet UIImageView    *heroPowerImageView;
 @property (nonatomic, weak) IBOutlet UIButton       *villainEditButton;
 @property (nonatomic, weak) IBOutlet UIImageView    *villainPowerImageView;
+
+// Board View
+@property (nonatomic, weak) IBOutlet UIView         *heroBoardContainer;
+@property (nonatomic, weak) IBOutlet UIView         *villainBoardContainer;
 
 @property (nonatomic, strong) UIPopoverController *currentPopover;
 
@@ -64,6 +69,15 @@
     self.villain = [HSDataCenter sharedInstance].newHero;
     self.villain.isVillain = @(YES);
     self.villain.scene = self.scene;
+    
+    // Init board
+    HSMinionBoardViewController *heroBoardVC = [[HSMinionBoardViewController alloc] initWithNibName:nil bundle:nil];
+    [self.heroBoardContainer addSubview:heroBoardVC.view];
+    [self addChildViewController:heroBoardVC];
+    
+    HSMinionBoardViewController *villainBoardVC = [[HSMinionBoardViewController alloc] initWithNibName:nil bundle:nil];
+    [self.villainBoardContainer addSubview:villainBoardVC.view];
+    [self addChildViewController:villainBoardVC];
 }
 
 - (void)didReceiveMemoryWarning
