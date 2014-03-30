@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="HSCard" representedClassName="" syncable="YES">
         <attribute name="cardClass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rarity" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSHero" inverseName="cards" inverseEntity="HSHero" syncable="YES"/>
     </entity>
     <entity name="HSHero" representedClassName="HSHero" syncable="YES">
@@ -53,11 +55,11 @@
         <relationship name="heroCarried" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HSHero" inverseName="weapon" inverseEntity="HSHero" syncable="YES"/>
     </entity>
     <elements>
-        <element name="HSCard" positionX="-63" positionY="-18" width="128" height="118"/>
-        <element name="HSHero" positionX="-54" positionY="-9" width="128" height="208"/>
-        <element name="HSMinion" positionX="-36" positionY="9" width="128" height="223"/>
-        <element name="HSSpell" positionX="-18" positionY="27" width="128" height="43"/>
-        <element name="HSScene" positionX="0" positionY="81" width="128" height="116"/>
-        <element name="HSWeapon" positionX="9" positionY="135" width="128" height="118"/>
+        <element name="HSCard" positionX="-216" positionY="-126" width="128" height="148"/>
+        <element name="HSHero" positionX="-47" positionY="-37" width="128" height="208"/>
+        <element name="HSMinion" positionX="-245" positionY="72" width="128" height="223"/>
+        <element name="HSScene" positionX="142" positionY="9" width="128" height="116"/>
+        <element name="HSSpell" positionX="124" positionY="-108" width="128" height="43"/>
+        <element name="HSWeapon" positionX="-63" positionY="-261" width="128" height="118"/>
     </elements>
 </model>

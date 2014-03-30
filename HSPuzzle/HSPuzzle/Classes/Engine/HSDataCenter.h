@@ -19,6 +19,14 @@ typedef enum
     hsCardTypeSecret    = 5
 } hsCardType;
 
+typedef enum
+{
+    hsCardCommon    = 1,
+    hsCardRare      = 2,
+    hsCardEpic      = 3,
+    hsCardLegendary = 4
+} hsCardRarity;
+
 @interface HSDataCenter : NSObject
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext          *managedObjectContext;

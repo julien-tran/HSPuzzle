@@ -18,5 +18,7 @@
 @property (nonatomic, retain) NSString * cardName;
 @property (nonatomic, retain) NSString * cardClass;
 @property (nonatomic, retain) NSNumber * cardType;
+@property (nonatomic, retain) NSString * cardDescription;
+@property (nonatomic, retain) NSString * rarity;
 
 @end

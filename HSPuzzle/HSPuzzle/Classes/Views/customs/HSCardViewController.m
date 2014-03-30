@@ -18,6 +18,13 @@
 @property (nonatomic, weak) IBOutlet UIImageView    *spellImage;
 @property (nonatomic, weak) IBOutlet UIImageView    *weaponImage;
 @property (nonatomic, weak) IBOutlet UIImageView    *legendaryFrame;
+@property (nonatomic, weak) IBOutlet UILabel        *descriptionView;
+@property (weak, nonatomic) IBOutlet UILabel *manaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *atckLabel;
+@property (weak, nonatomic) IBOutlet UILabel *hpLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *titleCardImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *rarityImageView;
+
 @end
 
 @implementation HSCardViewController
@@ -47,6 +54,7 @@
 
 - (void)updateUI
 {
+    NSString *title = nil;
     if ([self.card isKindOfClass:[HSMinion class]])
     {
         HSMinion *minion = (HSMinion*)self.card;
@@ -54,6 +62,12 @@
         self.weaponImage.image = nil;
         self.cardFrame.image = [UIImage imageNamed:@"cardframe_minion.png"];
         self.legendaryFrame.hidden = !minion.isLegendary;
+        self.descriptionView.text = self.card.cardDescription;
+        self.manaLabel.text = [NSString stringWithFormat:@"%@",self.card.manaCost];
+        self.atckLabel.text = [NSString stringWithFormat:@"%@",minion.attackOriginal];
+        self.hpLabel.text = [NSString stringWithFormat:@"%@",minion.healthOriginal];
+        title = [NSString stringWithFormat:@"Title_%@.png",minion.cardName];
+        self.titleCardImageView.image = [UIImage imageNamed:title];
     }
     else if ([self.card isKindOfClass:[HSWeapon class]])
     {
@@ -70,6 +84,7 @@
         self.cardFrame.image = nil;
         self.legendaryFrame.hidden = YES;
     }
+    self.rarityImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",self.card.rarity]];
 }
 
 @end

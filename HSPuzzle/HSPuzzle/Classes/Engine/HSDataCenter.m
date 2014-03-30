@@ -202,7 +202,7 @@
             continue;
         
         // Similarly, the weapon-type card needs at least 5 components
-        if (hsCardTypeWeapon == cardType && components.count < 5)
+        if (hsCardTypeWeapon == cardType && components.count < 6)
             continue;
         
         HSCard *aCard = nil;
@@ -216,6 +216,7 @@
         aCard.cardType = @(cardType);
         aCard.cardName = components[1];
         aCard.manaCost = @([components[2] intValue]);
+        
         if (hsCardTypeWeapon == cardType)
         {
             ((HSWeapon*)aCard).attackOriginal = @([components[3] intValue]);
@@ -228,7 +229,7 @@
             minion.healthOriginal = @([components[4] intValue]);
             if (5 < components.count)
             {
-                NSString *specialText = [components[5] lowercaseString];
+                NSString *specialText = [components[6] lowercaseString];
                 if (NSNotFound != [specialText rangeOfString:@"taunt"].location)
                     minion.isTaunt = @(YES);
                 if (NSNotFound != [specialText rangeOfString:@"stealth"].location)
@@ -237,8 +238,12 @@
                     minion.divineShield = @(YES);
                 if (NSNotFound != [specialText rangeOfString:@"legendary"].location)
                     minion.isLegendary = @(YES);
+                NSString *des = components[6];
+                aCard.cardDescription = (des.length > 0) ? des : nil;
+
             }
         }
+        aCard.rarity = components[5];
     }
 }
 

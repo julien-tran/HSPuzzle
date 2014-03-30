@@ -17,5 +17,7 @@
 @dynamic cardClass;
 @dynamic cardName;
 @dynamic cardType;
+@dynamic cardDescription;
+@dynamic rarity;
 
 @end
