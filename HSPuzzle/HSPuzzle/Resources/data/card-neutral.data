@@ -1,10 +1,9 @@
-
 1|Abomination|5|4|4|rare|Taunt. Deathrattle: Deal 2 damage to ALL characters.
 1|AbusiveSergeant|1|2|1|common|Battlecry: Give a minion +2 Attack until end of turn
 1|AcidicSwampOoze|2|3|2|common|Battlecry: Destroy your opponent's weapon.
 1|AcolyteofPain|3|1|3|common|Whenever this minion takes damage, draw a card.
-1|Alarm-o-Bot|3|0|3|rare|At the start of your turn, swap this minion with a random one in your hand.
-1|Alexstrasza|9|8|8|legendary|Battlecry: Set a hero's remaining Health to 15.
+1|AlarmOBot|3|0|3|rare|At the start of your turn, swap this minion with a random one in your hand.
+1|Alextraza|9|8|8|legendary|Battlecry: Set a hero's remaining Health to 15.
 1|AmaniBerserker|2|2|3|common|Enrage: +3 Attack.
 1|AncientBrewmaster|4|5|4|common|Battlecry: Return a friendly minion from the battlefield to your hand.
 1|AncientMage|4|2|5|rare|Battlecry: Give adjacent minions Spell Power +1.
@@ -33,7 +32,7 @@
 1|Brewmaster|4|4|4|common|
 1|CairneBloodhoof|6|4|5|legendary|Deathrattle: Summon a 4/5 Baine Bloodhoof.
 1|CaptainGreenskin|5|5|4|legendary|Give your weapon +1/+1
-1|Captain'sParrot|2|1|1|epic|Battlecry: Put a random Pirate from your deck into your hand.
+1|CaptainsParrot|2|1|1|epic|Battlecry: Put a random Pirate from your deck into your hand.
 1|Chicken|0|1|1|basic|Hey Chicken!
 1|ChillwindYeti|4|4|5|common|
 1|ColdlightOracle|3|2|2|rare|Battlecry: Each player draws 2 cards.
@@ -87,7 +86,7 @@
 1|HiddenGnome|2|1|3|common|Was hiding in a barrel!
 1|Hogger|6|4|4|legendary|At the end of your turn, summon a 2/2 Gnoll with Taunt.
 2|HoggerSMASH!|3|0|0|common|Deal 4 damage.
-1|HomingChicken|1|0|1|common|At the start of your turn, destroy this minion and draw 3 cards.
+1|HomingChiken|1|0|1|common|At the start of your turn, destroy this minion and draw 3 cards.
 1|HungryCrab|1|1|2|epic|Battlecry: Destroy a Murloc and gain +2/+2.
 2|IAmMurloc|4|0|0|basic|Summon three, four, or five 1/1 Murlocs.
 1|IllidanStormrage|6|7|5|legendary|Whenever you play a card, summon a 2/1 Flame of Azzinoth.
@@ -120,10 +119,10 @@
 2|Metamorphosis|6|0|0|common|Do something crazy.
 1|MillhouseManastorm|2|4|4|legendary|Battlecry: Enemy spells cost 0 next turn
 1|MindControlTech|3|3|3|rare|Battlecry: If your opponent has 4 or more minions, take control of one at random.
-1|Mogu'shanWarden|4|1|7|common|Taunt
+1|MogushanWarden|4|1|7|common|Taunt
 1|MoltenGiant|20|8|8|epic|Costs (1) less for each damage your hero has taken.
 1|MountainGiant|12|8|8|epic|Costs (1) less for each other card in your hand.
-1|Mukla'sBigBrother|6|10|10|common|So strong! And only 6 Mana?!
+1|MuklasBigBrother|6|10|10|common|So strong! And only 6 Mana?!
 1|MurlocRaider|1|2|1|basic|
 1|MurlocScout|0|1|1|common|
 1|MurlocTidecaller|1|1|2|rare|Whenever a Murloc is summoned, gain +1 Attack.
@@ -137,10 +136,10 @@
 1|Nozdormu|9|8|8|legendary|Players only have 15 seconds to take their turns.
 1|OasisSnapjaw|4|2|7|basic|
 1|OgreMagi|4|4|4|common|Spell Power +1
-1|OldMurk-Eye|4|2|4|legendary|Charge. Has +1 Attack for each other Murloc on the battlefield.
+1|OldMurkEye|4|2|4|legendary|Charge. Has +1 Attack for each other Murloc on the battlefield.
 1|Onyxia|9|8|8|legendary|Battlecry: Summon 1/1 Whelps until your side of the battlefield is full.
 1|PandarenScout|1|1|1|common|
-1|Pint-SizedSummoner|2|2|2|rare|The first minion you play each turn costs (1) less.
+1|PintSizedSummoner|2|2|2|rare|The first minion you play each turn costs (1) less.
 1|Poultryizer|1|0|3|common|At the start of your turn, transform a random minion into a 1/1 Chicken.
 2|PoweroftheHorde|4|0|0|basic|Summon a random Horde Warrior
 1|PriestessofElune|6|5|4|common|Battlecry: Restore 4 Health to your hero.
@@ -158,8 +157,8 @@
 1|ScarletCrusader|3|3|1|common|Divine Shield
 1|SeaGiant|10|8|8|epic|Costs (1) less for each other minion on the battlefield.
 1|Secretkeeper|1|1|1|rare|Whenever a Secret is played, gain +1/+1.
-1|Sen'jinShieldmasta|4|3|5|basic|Taunt
-1|Shado-PanMonk|2|2|2|common|
+1|SenjinShieldmasta|4|3|5|basic|Taunt
+1|ShadoPanMonk|2|2|2|common|
 1|ShatteredSunCleric|3|3|2|common|Battlecry: Give a friendly minion +1/+1.
 1|Sheep|0|1|1|common|
 1|Shieldbearer|1|0|4|common|Taunt.
@@ -191,7 +190,7 @@
 2|Transcendence|1|0|0|common|Until you kill Cho's minions, he can't be attacked.
 1|TundraRhino|5|2|5|common|Your Beasts have Charge
 1|TwilightDrake|4|4|1|rare|Battlecry: Gain +1 health for each card in your hand.
-1|VentureCo.Mercenary|5|7|6|common|Your minions cost (3) more.
+1|VentureCoMercenary|5|7|6|common|Your minions cost (3) more.
 1|VioletApprentice|0|1|1|common|
 1|VioletTeacher|4|3|5|rare|Whenever you cast a spell, summon a 1/1 Violet Apprentice.
 1|VoodooDoctor|1|2|1|basic|Battlecry: Restore 2 Health.

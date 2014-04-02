@@ -52,6 +52,8 @@
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"hero = NULL AND cardName CONTAINS[cd] %@", self.searchBar.text]];
     else
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"hero = NULL"]];
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"cardName" ascending:YES];
+    [fetchRequest setSortDescriptors:@[sort]];
     
     self.matchedResults = [[HSDataCenter sharedInstance].managedObjectContext executeFetchRequest:fetchRequest error:nil];
     [self.cardCarousel reloadData];

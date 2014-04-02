@@ -204,46 +204,47 @@
         // Similarly, the weapon-type card needs at least 5 components
         if (hsCardTypeWeapon == cardType && components.count < 6)
             continue;
-        
-        HSCard *aCard = nil;
-        if (hsCardTypeWeapon == cardType)
-            aCard = self.newWeapon;
-        else if (hsCardTypeMinion == cardType)
-            aCard = self.newMinion;
-        else
-            aCard = self.newCard;
-        
-        aCard.cardType = @(cardType);
-        aCard.cardName = components[1];
-        aCard.manaCost = @([components[2] intValue]);
-        
-        if (hsCardTypeWeapon == cardType)
-        {
-            ((HSWeapon*)aCard).attackOriginal = @([components[3] intValue]);
-            ((HSWeapon*)aCard).durabilityOriginal = @([components[4] intValue]);
-        }
-        else if (hsCardTypeMinion == cardType)
-        {
-            HSMinion *minion = (HSMinion*)aCard;
-            minion.attackOriginal = @([components[3] intValue]);
-            minion.healthOriginal = @([components[4] intValue]);
-            if (5 < components.count)
+        // TODO: We dont add spell for the moment
+        if (hsCardTypeSpell != cardType) {
+            HSCard *aCard = nil;
+            if (hsCardTypeWeapon == cardType)
+                aCard = self.newWeapon;
+            else if (hsCardTypeMinion == cardType)
+                aCard = self.newMinion;
+            else
+                aCard = self.newCard;
+            aCard.cardType = @(cardType);
+            aCard.cardName = components[1];
+            aCard.manaCost = @([components[2] intValue]);
+            
+            if (hsCardTypeWeapon == cardType)
             {
-                NSString *specialText = [components[6] lowercaseString];
-                if (NSNotFound != [specialText rangeOfString:@"taunt"].location)
-                    minion.isTaunt = @(YES);
-                if (NSNotFound != [specialText rangeOfString:@"stealth"].location)
-                    minion.isStealth = @(YES);
-                if (NSNotFound != [specialText rangeOfString:@"divine"].location)
-                    minion.divineShield = @(YES);
-                if (NSNotFound != [specialText rangeOfString:@"legendary"].location)
-                    minion.isLegendary = @(YES);
-                NSString *des = components[6];
-                aCard.cardDescription = (des.length > 0) ? des : nil;
-
+                ((HSWeapon*)aCard).attackOriginal = @([components[3] intValue]);
+                ((HSWeapon*)aCard).durabilityOriginal = @([components[4] intValue]);
             }
+            else if (hsCardTypeMinion == cardType)
+            {
+                HSMinion *minion = (HSMinion*)aCard;
+                minion.attackOriginal = @([components[3] intValue]);
+                minion.healthOriginal = @([components[4] intValue]);
+                if (5 < components.count)
+                {
+                    NSString *specialText = [components[6] lowercaseString];
+                    if (NSNotFound != [specialText rangeOfString:@"taunt"].location)
+                        minion.isTaunt = @(YES);
+                    if (NSNotFound != [specialText rangeOfString:@"stealth"].location)
+                        minion.isStealth = @(YES);
+                    if (NSNotFound != [specialText rangeOfString:@"divine"].location)
+                        minion.divineShield = @(YES);
+                    if (NSNotFound != [specialText rangeOfString:@"legendary"].location)
+                        minion.isLegendary = @(YES);
+                    NSString *des = components[6];
+                    aCard.cardDescription = (des.length > 0) ? des : nil;
+                    
+                }
+            }
+            aCard.rarity = components[5];
         }
-        aCard.rarity = components[5];
     }
 }
 
